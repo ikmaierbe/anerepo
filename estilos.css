@@ -1,0 +1,749 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+/*-----------------------GENERALES-----------------------*/
+/*MENU DE NAVEGACIÓN*/
+.menu-navegacion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 60px;
+    background-color: #cfcfcf;
+    position: fixed;
+    z-index: 980;
+}
+.menu-nav_logo > a{
+    display: flex;
+    align-items: center;
+    color: #151515;
+}
+.menu-nav_logo > a > img{
+    height: 25px;
+    margin-right: 10px;
+}
+.div-boton{
+    display: flex; 
+    justify-content: center;
+}
+.div-boton_margen{
+    margin-top: 35px;
+}
+ul.menu-nav_paginas{
+    display: flex;
+    align-items: center;
+}
+nav > ul > li{
+    margin-left: 15px;
+    text-align: center;
+}
+.menu-nav_paginas > li > a{
+    text-decoration: none;
+    color: #151515;
+} .menu-nav_paginas > li > a:hover{
+    font-size: 14pt;
+    transition: all 0.3s;
+}
+.menu-nav_paginas > li > a > img{
+    height: 20px;
+}
+.menu-hamb, .cerrar-menu-hamb{
+    display: none;
+}
+.material-symbols-rounded {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+/*MENU RESPONSIVE*/
+@media all and (max-width:700px){
+    .menu-hamb, .cerrar-menu-hamb{
+        display: block;
+        border: 0;
+        background-color: transparent;
+    }
+
+    nav{
+        opacity: 0;  
+        visibility: hidden;
+        position: fixed;
+        padding: 40px 60px 20px 60px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        background-color: #cfcfcf;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    ul.menu-nav_paginas{
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .menu-nav_paginas > li{
+        margin: 5px 0;
+    }  
+}
+
+@media all and (max-width: 400px){
+    .menu-navegacion{
+        padding: 25px 20px;
+    }
+}
+
+/*CONTENIDO*/
+body{
+    font-family: "Inter", system-ui;
+    color: #151515;
+}
+.bloque{
+    padding: 40px 0;
+    width: 80vw;
+    margin: auto;
+}
+.bloque-fondo{
+    background-color: #cfcfcf6d;
+    padding: 80px 0;
+}
+.bloque-cabecera{
+    padding: 180px 0 40px 0;
+    width: 80vw;
+    margin: auto;
+} 
+h1{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 90pt;
+    text-align: center;
+}
+h2{
+    font-weight: 600;
+    font-style: italic;
+    font-size: 36pt;
+    margin-bottom: 15px;
+} .titulo-cartelera{
+    text-align: center; 
+    font-weight: 400;
+}
+h3{
+    font-weight: 550;
+    font-size: 20pt;
+    margin-top: 10px;
+}
+h4{
+    font-weight: 550;
+    font-size: 16pt;
+}
+p{
+    font-weight: 300;
+    font-size: 14pt;
+    margin-bottom: 10px;
+}
+a{
+    text-decoration: none;
+
+}
+ul > li{
+    list-style: none;
+}
+
+.boton{
+    background-color: #151515;
+    padding: 13px 50px;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 450;
+    color: #ededed;
+} .boton:hover{
+    background-color: #5b5b5b;
+    transition: all 0.3s;
+}
+
+.border-top-right-radius{
+    border-top-right-radius: 35px;
+} .border-bottom-right-radius{
+    border-bottom-right-radius: 35px;
+} .border-top-left-radius{
+    border-top-left-radius: 35px;
+} .border-bottom-left-radius{
+    border-bottom-left-radius: 35px;
+}
+
+/*FOOTER*/
+footer{
+    background-color: #cfcfcf;
+    padding: 40px 0px;
+}
+.footer-bloque-info{
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer_logo > a{
+    display: flex;
+    align-items: center;
+    color: #151515;
+}
+.footer_logo > a > img{
+    height: 25px;
+    margin-right: 10px;
+}
+.footer-menu_info{
+    width: 35vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+} 
+.footer-menu_info > ul > li{
+    margin-bottom: 15px;
+}
+.footer-menu_info > ul > li > a, div.footer-legal-enlaces > p > a{
+    color: #151515;
+} 
+.footer-menu_info > ul > li > a:hover{
+    font-size: 14pt;
+    transition: all 0.3s;
+} 
+.footer-legal-enlaces{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 60vw;
+    margin: 10% auto auto;
+    padding-top: 40px;
+    border-top: solid 1px #151515;
+} 
+.footer-legal-enlaces > p, div.footer-legal-cc > p{
+    font-size: 12pt;
+    padding: 0px 10px;
+    margin: 5px auto;
+}
+.footer-legal-enlaces > p > a:hover{
+    font-size: 13pt;
+    transition: all 0.3s;
+}
+
+/*FOOTER RESPONSIVE*/
+@media all and (max-width: 700px){
+    .footer-bloque-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-menu_info{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .footer-info{
+        margin-top: 30px;
+    }
+    .footer-legal-enlaces{
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }    
+}
+
+/*-----------------------INDEX-----------------------*/
+/*CABECERA*/
+.imagen-hero_index{
+    height: 85vh;
+    background-image: url(img/joker.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    opacity: 0.85;
+}
+.texto-hero_index{
+    position: absolute;
+    margin: -210px 0 0 30px;
+} .texto-hero_index > h3{
+    font-size: 65pt;
+    font-weight: 750;
+    font-style: italic;
+    color: #ededed;
+} .texto-hero_index > h4{
+    font-size: 36pt;
+    font-weight: 300;
+    font-style: italic;
+    color: #ededed;
+}
+
+/*CARTELERA*/
+.sec-cartelera_padding{
+    margin-top: 0; 
+    padding-top: 10px;
+}
+.peliculas{
+    display: flex;
+    flex-wrap: wrap;
+}
+.bloque-pelicula{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+} .bloque-pelicula > a{
+    color: #151515;
+} .bloque-pelicula > a > img{
+    height: 50vh;
+} 
+
+.pelicula-dia{
+    font-weight: 500;
+    font-size: 14pt;
+}
+.pelicula-horario{
+    font-size: 13pt;
+}
+
+
+/*INFORMACIÓN*/
+.bloque-informacion{
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.texto-informacion{
+    width: 50%;
+}
+.imagen-informacion{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+} 
+.imagen-informacion > img{
+    height: 400px;
+}
+.bloque-listado-contacto > li{
+    margin-bottom: 8px;
+} .bloque-listado-contacto > li > h3{
+    margin-top: 20px;
+}.bloque-listado-contacto > li > a{
+    color: #151515;
+    font-size: 14pt;
+}
+.google-maps{
+    border-top-left-radius: 35px;
+}
+
+/*ÁREA PERSONAL*/
+form.acceso-area-personal{
+    border: #cfcfcf 2px solid;
+    padding: 30px 20px;
+    border-radius: 15px;
+    width: 55%;
+} form.acceso-area-personal > label{
+    font-weight: 500;
+    font-size: 14pt;
+} form.acceso-area-personal > input{
+    border: #cfcfcf 1px solid;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0 30px 0;
+    width: 100%;
+    color: #151515;
+    font-size: 12pt;
+}
+
+
+/*-----------------------PÁGINAS ESPECÍFICAS-----------------------*/
+/*INFORMACIÓN*/
+.google-maps{
+    border-top-right-radius: 35px;
+    border: #b2b2b2 2px solid;
+}
+.mas-cines{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.bloque-cines{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+
+} 
+.bloque-cines > a > img{
+    height: 50vh;
+} 
+.bloque-cines > a{
+    color: #151515;
+}
+.calle-cine{
+    font-weight: 500;
+    font-size: 14pt;
+}
+
+/*PELÍCULA*/
+/*cabecera*/
+.yt-trailer{
+    padding-top: 100px;
+}
+.yt-trailer > iframe{
+    width: 100vw; 
+    height: 65vh;
+}
+
+/*información sobre la película*/
+.pag-pelicula_info{
+    padding-top: 15px; 
+    display: flex; 
+    justify-content: space-between;
+}
+.portada-pelicula{
+    background-image: url(img/portada-joker.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 80;    
+    margin-top: -150px;
+    border-top-right-radius: 35px;
+    width: 35%;
+    
+}
+.informacion-pelicula{
+    width: 60%;
+}
+.informacion-pelicula > div{
+    margin-top: 20px;
+}
+.informacion-pelicula_en-linea{
+    display: flex;
+    justify-content: space-between;
+}
+.informacion-pelicula_columna > div{
+    margin-top: 20px;
+}
+
+/*precio y horarios*/
+.pelicula-dia-precio{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: #151515 2px solid;
+} .pelicula-dia-precio > p{
+    font-style: italic;
+    font-size: 26pt;
+    padding-bottom: 0;
+}
+.pelicula-horarios{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+.texto-pelicula-horarios{
+    border: #b2b2b2 1.5px solid;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px 15px;
+    font-size: 14pt;
+    text-align: center;
+    margin: 0;
+    color: #151515;
+} .texto-pelicula-horarios:hover{
+    background-color: #cfcfcf;
+    font-weight: 500;
+}
+
+/*VOTAR*/
+form.votacion{
+    border: #cfcfcf 2px solid;
+    padding: 30px 20px;
+    border-radius: 15px;
+    width: 55%;
+} form.votacion > label{
+    font-weight: 500;
+    font-size: 14pt;
+} form.votacion > input, #calificacion{
+    border: #cfcfcf 1px solid;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0 30px 0;
+    width: 100%;
+    color: #151515;
+    font-size: 12pt;
+} form.votacion > input.boton{
+    color: #ffffff;
+}
+#calificacion{
+    color: #151515;
+}
+
+/*CESTA*/
+.articulo-cesta > h3{
+    margin: 25px 0;
+}
+.informacion-articulo-cesta{
+    display: flex;
+    margin-bottom: 15px;
+
+} .imagen-articulo-cesta > img{
+    width: 130px;
+    height: 200px;
+    margin-right: 30px;
+}
+.duracion-cesta{
+    font-size: 12pt;
+    margin-bottom: 5px;
+}
+.horario-cesta{
+    font-weight: 450;
+}
+.cantidad-cesta{
+    border: #b2b2b2 1.5px solid;
+    border-radius: 10px;
+    width: 150px;
+    padding: 10px 15px;
+    text-align: center;
+    margin: 0;
+}
+
+/*-----------------------RESPONSIVE-----------------------*/
+
+@media all and (min-width: 925px) and (max-width: 1115px){
+    /*GENERALES*/
+    h1{
+        font-size: 70pt;
+    }
+    /*PELÍCULAS (página index + cartelera)*/
+    .peliculas{
+        justify-content: space-between;
+    }
+    div.bloque-pelicula{
+        width: 30%;
+    }
+}
+
+@media all and (min-width: 600px) and (max-width: 925px){
+    /*GENERALES*/
+    h1{
+        font-size: 55pt;
+    }
+    h2{
+        font-size: 28pt;
+    }
+    .div-boton{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    /*PELÍCULAS (página index + cartelera + página de película)*/
+    .bloque-pelicula{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+    }   
+    .bloque-cines{
+        width: 40%;
+    }  
+    .pag-pelicula_info{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .portada-pelicula{
+        margin-top: 20px;
+        width: 200px;
+        height: 300px;
+    }
+    .informacion-pelicula{
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 700px) and (max-width: 925px){
+    /*GENERALES*/
+    .bloque-cabecera{
+        padding: 180px 0 15px 0;
+    } 
+    
+    /*INFORMACIÓN*/
+    .bloque-informacion{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .texto-informacion{
+        width: 100%;
+    }
+    .imagen-informacion{
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: 30px;
+    } 
+    .google-maps{
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media all and (max-width: 700px){
+    /*GENERALES*/
+    h1{
+        font-size: 38pt;
+    }
+    h2{
+        font-size: 26pt;
+    }
+    .div-boton{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .bloque-cabecera{
+        padding: 180px 0 25px 0;
+    }
+
+    /*cabecera index*/
+    .texto-hero_index{
+        margin: -170px 0 0 30px;
+    }
+    .texto-hero_index > h3{
+        font-size: 50pt;
+    }  
+    .texto-hero_index > h4{
+    font-size: 30pt; 
+    }
+
+    /*PELÍCULAS (página index + cartelera + página de película)*/
+    .peliculas{
+        justify-content: space-between;
+    } 
+    .bloque-informacion{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .texto-informacion{
+        width: 100%;
+    }
+    .imagen-informacion{
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: 30px;
+    } 
+    .google-maps{
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .bloque-cines{
+        width: 90%;
+    }     
+
+    /*FORMULARIO (página index + área personal + votación)*/
+    form.acceso-area-personal, form.votacion{
+        width: 100%;
+    }
+
+    /*PELÍCULAS*/
+    .pag-pelicula_info{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .portada-pelicula{
+        margin-top: 20px;
+        width: 200px;
+        height: 300px;
+    }
+    .informacion-pelicula{
+        width: 100%;
+    }
+    .informacion-pelicula_en-linea{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .sec-precio-horarios > div > a.boton{
+        width: 100%;
+    }
+    .pelicula-dia-precio{
+        flex-wrap: wrap;
+        margin-top: 75px;
+    }
+    .pelicula-horarios{
+        flex-wrap: wrap;
+    }
+    .texto-pelicula-horarios{
+        margin: 10px;
+        width: 100%;
+    }
+
+    @media all and (max-width: 600px){
+        /*PELÍCULAS (a 1 columna en dispositivos pequeños)*/
+        .bloque-pelicula{
+            width: 90%;
+            display: flex;
+        } 
+
+        /*INFORMACIÓN*/
+        .bloque-cines{
+            margin-bottom: 15px;
+        }
+
+        /*CESTA*/
+        .imagen-articulo-cesta > img{
+            margin-right: 10px;
+        }
+        .cantidad-cesta{
+            padding: 6px 8px;
+        }
+    }
+
+    @media all and (max-width: 400px){
+        /*GENERALES*/
+        h1{
+            font-size: 30pt;
+        }
+        .bloque-cabecera{
+            padding: 140px 0 10px 0;
+        }
+
+        /*INFORMACIÓN*/
+        .imagen-informacion > img{
+            height: 275px;
+        }
+
+        /*PÁGINA PELÍCULA*/
+        .yt-trailer{
+            padding-top: 75px;
+        }
+    }
+
+    @media all and (max-width: 350px){
+        /*GENERALES*/
+        .boton{
+            padding: 13px 30px;
+        }
+        h1{
+            font-size: 26pt;
+        }
+
+        /*CESTA*/
+        .cantidad-cesta {
+            width: 125px;
+        }
+    }
+}

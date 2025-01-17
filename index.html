@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="cine usurbil, un lugar donde los momentos de ocio son algo más que instantes de escape">
+        <meta name="keywords" content="cine, pelicula, usurbil, proyeccion">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--información que aparecerá en la pestaña-->
+        <title>CINE USURBIL</title>
+        <link rel="icon" href="img/cine-icono.svg">
+
+        <!--google fonts, tipografia Inter-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+        <!--para insertar iconos de Google Icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu_close" />
+        
+        <!--para relacionar con CSS-->
+        <link rel="stylesheet" href="estilos.css" type="text/css">        
+    </head>
+    <body>
+        <!--MENU DE NAVEGACIÓN-->
+        <header>
+            <div class="menu-navegacion"> 
+                <div class="menu-nav_logo"><a href="index.html"><img src="img/cine-icono.svg" alt="cine usurbil"><strong>CINE USURBIL</strong></a></div>
+                <button class="menu-hamb" id="abrir"><span class="material-symbols-rounded">
+                    menu
+                    </span></button>
+                <nav id="nav">
+                    <button class="cerrar-menu-hamb" id="cerrar"><span class="material-symbols-rounded">close</span></button>
+                    <ul class="menu-nav_paginas">
+                        <li><a href="index.html"><strong>INICIO</strong></a></li>
+                        <li><a href="cartelera.html">CARTELERA</a></li>
+                        <li><a href="informacion.html">INFORMACIÓN</a></li>
+                        <li><a href="area_personal.html">ÁREA PERSONAL</a></li>       
+                        <li><a href="votar.html">VOTAR</a></li>                                 
+                        <li><a href="cesta.html"><img src="img/cesta-icono.svg" alt="cesta"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <!--MAIN-->
+        <main>
+            <!--CABECERA-->
+            <section class="cabecera">
+                <a href="joker.html"><div class="imagen-hero_index"></div></a>
+                <div class="texto-hero_index">
+                    <h3>Joker</h3>
+                    <h4>Todd Phillips</h4>
+                </div>
+            </section>
+
+            <!--CARTELERA-->
+            <section class="bloque">
+                <h2>Novedades</h2>
+                <div class="peliculas">
+                    <div class="bloque-pelicula">
+                        <a href="joker.html">
+                            <img class="border-top-left-radius" src="img/portada-joker.jpg" alt="portada-joker">
+                            <h3>Joker</h3>
+                            <p class="pelicula-dia">Sábado, 23 de agosto</p>
+                            <p class="pelicula-horario">14:00 | 16:00 | 19:00 | 21:00</p>
+                        </a>
+                    </div>
+                    <div class="bloque-pelicula">
+                        <a href="">
+                            <img class="border-bottom-right-radius" src="img/portada-avatar.jpg" alt="portada-avatar">
+                            <h3>Avatar</h3>
+                            <p class="pelicula-dia">Sábado, 23 de agosto</p>
+                            <p class="pelicula-horario">15:00 | 18:00 | 20:30</p>
+                        </a>
+                    </div>
+                    <div class="bloque-pelicula">
+                        <a href="">
+                            <img class="border-top-right-radius" src="img/portada-dunkerque.jpg" alt="portada-dunkerque">
+                            <h3>Dunkirk</h3>
+                            <p class="pelicula-dia">Domingo, 24 de agosto</p>
+                            <p class="pelicula-horario">10:00 | 13:00</p>
+                        </a>
+                    </div>
+                    <div class="bloque-pelicula">
+                        <a href="">
+                            <img class="border-bottom-left-radius" src="img/portada-dune.jpg" alt="portada-dune">
+                            <h3>Dune</h3>
+                            <p class="pelicula-dia">Domingo, 24 de agosto</p>
+                            <p class="pelicula-horario">15:00 | 17:00</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="div-boton">
+                    <a class="boton" href="cartelera.html">ver toda la cartelera</a>
+                </div>
+            </section>
+
+            <!--INFORMACIÓN - CINE USURBIL-->
+            <section class="bloque-fondo">
+                <div class="bloque-informacion">
+                    <div class="texto-informacion">
+                        <h2>Cine Usurbil</h2>
+                        <p>En <em>Cine Usurbil</em> sabemos que los momentos de ocio son algo más que instantes de escape y ante todo, creemos que todos merecemos disfrutar. Somos una empresa de origen familiar y raices en Usurbil. Además de ofrecer una programación de calidad, diversa y con criterio propio, nos preocupamos por crear momentos que dejan buen sabor de boca alrededor del cine, aquellos a los que siempre apetece volver. </p> 
+                        <p>A <em>Cine Usurbil</em> se viene por nostalgia de recuerdos maravillosos, por el deseo de descubrir tu propia historia a través de narrativas ajenas o porque simplemente, disfrutar siempre apetece.</p>
+                        <p>Esa es la magia del cine, que nos mueve, nos expande y nos transforma.</p>
+                        <div class="div-boton_margen">
+                            <a class="boton" href="informacion.html">más información</a>
+                        </div>
+                    </div>
+                    <div class="imagen-informacion"><img class="border-top-left-radius" src="img/cine-04.jpg" alt="imagen-cine-usurbil"></div>
+                </div>
+            </section>
+            
+            <!--ÁREA PERSONAL-->
+            <section class="bloque">
+                <div class="bloque-area">
+                    <h2>Área Personal</h2>
+                    <form class="acceso-area-personal">
+                        <label for="email">Email:</label><br>
+                        <input type="text" id="email" name="email" placeholder="email@dominio.eus"><br>
+                        <label for="contrasena">Contraseña:</label><br>
+                        <input type="password" id="contrasena" name="contrasena" placeholder="*********"><br>
+                        <a class="boton" href="cesta.html">acceder</a>
+                    </form> 
+                </div>               
+            </section>
+        </main>
+        
+        <!--FOOTER-->
+        <footer>
+            <div class="footer-bloque-info">
+                <div class="footer_logo"><a href="index.html"><img src="img/cine-icono.svg" alt="cine usurbil"><strong>CINE USURBIL</strong></a></div>
+                <div class="footer-menu_info">
+                    <ul class="footer-menu">
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="cartelera.html">CARTELERA</a></li>
+                        <li><a href="informacion.html">INFORMACIÓN</a></li>
+                        <li><a href="area_personal.html">ÁREA PERSONAL</a></li>
+                        <li><a href="votar.html">VOTAR</a></li>                                                    
+                        <li><a href="cesta.html">MI CESTA</a></li>
+                    </ul>
+                    <ul class="footer-info">
+                        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                        <li><a href="tel:++34943364600">Teléfono</a></li>
+                        <li><a href="mailto:cineusurbil@gmail.com">Email</a></li>
+                        <li><a href="https://maps.app.goo.gl/rK7AozFXygumUXkG8" target="_blank">Localización</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bloque-legal">
+                <div class="footer-legal-enlaces">
+                    <p><a href="#">Aviso Legal</a></p>
+                    <p><a href="#">Política de privacidad</a></p>
+                    <p><a href="#">Política de cookies</a></p>
+                    <p><a href="https://creativecommons.org/" target="_blank">(CC) Creative Commons</a></p>
+                </div>
+            </div>
+        </footer>
+        <!--para relacionar con JS-->
+        <script src="javascript.js"></script>
+    </body>
+</html>
