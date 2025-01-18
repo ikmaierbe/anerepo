@@ -14,7 +14,7 @@
     width: 100%;
     padding: 40px 60px;
     background-color:#b2b2b2;
-    position: fixed;
+        position: fixed;
     z-index: 980;
 }
 .menu-nav_logo > a{
